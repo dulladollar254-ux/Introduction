@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Eportfolio</title>
+
+
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#111827;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+section{
+    padding:100px 8%;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h1{
+    font-size:60px;
+}
+
+.hero-text h1 span{
+    color:#38bdf8;
+}
+
+.hero-text p{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#38bdf8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:320px;
+    border-radius:50%;
+    border:5px solid #38bdf8;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+.about,
+.projects,
+.contact{
+    background:#111827;
+    border-radius:20px;
+    margin-top:40px;
+}
+
+.about p{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.project-card h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.contact-info{
+    text-align:center;
+}
+
+.contact-info p{display:flex;
+    margin:12px 0;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+
+@media(max-width:768px){
+.hero{
+    text-align:center;
+    justify-content:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.profile{
+    margin-top:40px;
+}
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Dullas portfolio</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>Habari Kenya, I am <span>Abdalla Mohamed</span></h1>
+
+        <p>
+            Welcome to my ePortfolio. I am passionate about technology,
+            software development, graphic design, and creating innovative
+            digital solutions.
+        </p>
+
+        resume.pdf
+            Download CV
+        </a>
+    </div>
+
+    <div class="profile">
+        <img src=c:\Users\Admin\AppData\Local\Microsoft\Windows\INetCache\IE\AF8DW41R\e62f548e1a9e3af82fcc1435c45d267c[1].webp
+    </div>
+
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        I am a dedicated professional/student with experience in web
+        development, programming, design, and digital technologies.
+        My goal is to build impactful solutions and continuously grow
+        my technical and creative skills.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <h3>HTML5</h3>
+            <p>Responsive web structures</p>
+        </div>
+
+        <div class="skill">
+            <h3>CSS3</h3>
+            <p>Modern UI Design</p>
+        </div>
+
+        <div class="skill">
+            <h3>Networking </h3>
+            <p>Understanding of network protocols and configurations</p>
+        </div>
+
+        <div class="skill">
+            <h3>C Programming</h3>
+            <p>Problem solving</p>
+        </div>
+
+        <div class="skill">
+            <h3>Graphic Design</h3>
+            <p>Canva & Visual Design</p>
+        </div>
+
+        <div class="skill">
+            <h3>Database</h3>
+            <p>MySQL Management</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="projects" id="projects">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+                Personal portfolio showcasing skills and achievements.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Canva Design Projects</h3>
+            <p>
+                Food posters, social media graphics and advertisements.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Database System</h3>
+            <p>
+                MySQL-based record management project.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>C Programming App</h3>
+            <p>
+                Command-line program developed using C language.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-info">
+
+        <p>📧 dulladollar254@gmail.com</p>
+
+        <p>📱 +254 714184714</p>
+
+        <p>📍 Kenya,Mombasa</p>
+
+        <a href="mailto:dulladollar@gmail.com" class="btn">Send Message</a>
+    
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 Abdalla Mohamed | All Rights Reserved</p>
+</footer>
+
+<script>
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function(){
+        navLinks.forEach(item => item.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
+window.addEventListener("scroll",()=>{
+    const header=document.querySelector("header");
+
+    if(window.scrollY>50){
+        header.style.boxShadow="0 2px 20px rgba(0,0,0,0.4)";
+    }else{
+        header.style.boxShadow="none";
+    }
+});
+</script>
+
+</body>
+</html>
